@@ -21,13 +21,13 @@
 		@V_Cont_Ford int,
 		@V_Cont_Fiat int
 	begin
-		/* Método 1: O select precisa retornar uma simples coluna
-		 E um só resultado */
+		/* MÃ©todo 1: O select precisa retornar uma simples coluna
+		 E um sÃ³ resultado */
 
 		set @V_Cont_Ford = (select count(*) from Carros where Fabricante = 'ford')
-		print 'Número de Carros da Ford: ' + cast(@V_Cont_Ford as varchar)
+		print 'NÃºmero de Carros da Ford: ' + cast(@V_Cont_Ford as varchar)
 
-		 --Método 2:
+		 --MÃ©todo 2:
 		 select @V_Cont_Fiat = count(*) from Carros where Fabricante = 'fiat'
 		 print 'Quantidade de carros da fiat: ' + convert(varchar, @V_Cont_Fiat)
 	end
