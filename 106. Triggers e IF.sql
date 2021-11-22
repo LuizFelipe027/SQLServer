@@ -21,7 +21,7 @@ go
 
 insert into Produtos values('livro sql server', 'livros', 98.00)
 insert into Produtos values('livro oracle', 'livros', 50.00)
-insert into Produtos values('licenÁa power center', 'softwares', 45000.00)
+insert into Produtos values('licen√ßa power center', 'softwares', 45000.00)
 insert into Produtos values('notebook', 'Computadores', 3150.00)
 insert into Produtos values('livro business inteligence', 'livros', 50.00)
 go
@@ -30,7 +30,7 @@ select * from Produtos
 select * from Historico
 go
 
-/* Verificando o Usu·rio */
+/* Verificando o Usu√°rio */
 select suser_name()
 go
 
@@ -49,7 +49,7 @@ as
 	declare @Usuario varchar(30)
 	declare @Acao varchar(100)
 
-	/*Bloco de DeclaraÁ„o de valores*/
+	/*Bloco de Declara√ß√£o de valores*/
 	/*Primeiro Bloco*/
 	select @IDProduto = IDProduto from inserted
 	select @Produto = Nome from inserted
