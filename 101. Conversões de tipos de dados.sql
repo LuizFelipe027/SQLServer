@@ -1,4 +1,4 @@
-/* CONVERSﾃO DE DADOS */
+/* CONVERSﾃグ DE DADOS */
 SELECT 1 + '1' /*= 2 - AQUI O + SOMOU */
 
 SELECT '1' + '1' /*= 11 - AQUI O + CONCATENOU AS STRINGS*/
@@ -7,12 +7,12 @@ SELECT 'CURSO' + 1
 
 SELECT 'CURSO' + '1'
 
-/* FUNﾇﾕES DE CONVERSﾃO DE DADOS */
+/* FUNﾃ�ﾃ髭S DE CONVERSﾃグ DE DADOS */
 
 SELECT CAST('1' AS INT) + CAST('1' AS INT)
 GO
 
-/* CONVERSﾃO E CONCATENAﾇﾃO
+/* CONVERSﾃグ E CONCATENAﾃ�ﾃグ
 htts://msdn.microsoft.com/en-us/library/ms191530.aspx
 */
 
