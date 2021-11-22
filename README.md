@@ -1,2 +1,2 @@
 # SQLServer
-Curso de Bancos de dados
+Curso de Bancos de dados.
