@@ -13,7 +13,7 @@
 	select * from resultado
 	go
 
-	/* Atribuindo SELECTS a vari·veis*/ 
+	/* Atribuindo SELECTS a vari√°veis*/ 
 	declare 
 			@Resultado int
 			set @Resultado = (select 10 + 20)
