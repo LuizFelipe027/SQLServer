@@ -45,13 +45,13 @@
 	
 	exec Soma go /*Jeito Melhor de se executar e ler*/
 
-	/* Dinamicas - Com Parâmetros*/
+	/* Dinamicas - Com ParÃ¢metros*/
 	create proc Conta @Num1 int, @Num2 int
 	as 
 		select @Num1 + @Num2
 	go
 
-	/* Executando com parâmetros */
+	/* Executando com parÃ¢metros */
 	exec Conta 90, 70
 	go
 
@@ -67,7 +67,7 @@
 	where Tipo = 'CEL'
 	go
 
-	/* Trazer os telefones de acordo com os tipos passados por parâmetro*/
+	/* Trazer os telefones de acordo com os tipos passados por parÃ¢metro*/
 	create proc Telefones @Tipo char(3)
 	as
 		select Nome, Numero
@@ -89,7 +89,7 @@
 	group by Tipo
 	go
 
-	/* Criando procedure com parâmetro de entrada e saída*/
+	/* Criando procedure com parÃ¢metro de entrada e saÃ­da*/
 	 create procedure GetTipo @Tipo char(3), @Cont int output
 	 as
 		select @Cont = count(*)
@@ -97,7 +97,7 @@
 		where Tipo = @Tipo
 		go
 
-	/* Execução da Procedure com parametro de saída */
+	/* ExecuÃ§Ã£o da Procedure com parametro de saÃ­da */
 	/* Transaction_SQL --> Linguagem que o sql server trabalha*/
 	declare @saida int /*Variavel declarada para poder imprimir o resultado da procedure*/
 	Exec GetTipo @Tipo = 'CEL', @Cont = @Saida output
