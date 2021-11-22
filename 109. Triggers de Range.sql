@@ -1,6 +1,6 @@
 	select * from Hist_Salario 
 
-	/* Sal·rio Antigo, Novo, Data e Nome do Emprego */
+	/* Sal√°rio Antigo, Novo, Data e Nome do Emprego */
 
 	create table Salario_Range(
 		MinSal money,
@@ -25,13 +25,13 @@
 
 			if(@AtualSal < @MinSal)
 			begin
-				Raiserror('Sal·rio Menor que o piso!', 16,1)
+				Raiserror('Sal√°rio Menor que o piso!', 16,1)
 				rollback transaction
 			end
 
 			if(@AtualSal > @MaxSal)
 			begin 
-				raiserror('Sal·rio maior que o teto', 16,1)
+				raiserror('Sal√°rio maior que o teto', 16,1)
 				rollback transaction
 			end
 
